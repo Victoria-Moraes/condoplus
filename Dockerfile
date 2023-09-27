@@ -6,7 +6,7 @@
 FROM node:current-alpine
 
 # Create app directory
-WORKDIR /backend/source/app
+WORKDIR ./backend/source/app
 
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
