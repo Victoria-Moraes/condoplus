@@ -1,0 +1,70 @@
+.conteudo {
+    flex: 1;
+    padding: 1rem;
+}
+
+.page-divider {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+.page-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-popUp-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #00000055;
+    z-index: 100;
+
+    transition: all .2s;
+}
+
+.page-popUp {
+    min-height: 10rem;
+    background-color: $color-white;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+
+    transition: all .2s;
+
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+#popUpContent {
+    position: relative;
+}
+
+.iconClosePopUp {
+    position: absolute;
+    top: -.8rem;
+    right: -.5rem;
+    cursor: pointer;
+}
+
+.container_buttons-form {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.condoplus-panel {
+    padding: 1rem;
+    background-color: #edecec;
+    border-radius: 1rem;
+    border: solid 1px #c6c6c6;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

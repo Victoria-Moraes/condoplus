@@ -1,0 +1,74 @@
+<section class="login">
+    <div class="login__form">
+        <label class="login__form--title display-2"> Condo+ </label>
+
+        <div class="row g-3 needs-validation" id="formLogin"><!-- container-fluid -->
+            <!-- Email input -->
+            {{!-- <div class="form-outline mb-4">
+                <input type="email" id="txtLogin" class="form-control" required/>
+                <label class="form-label" for="txtLogin" >Email ou usuário</label>
+                <div class="invalid-feedback"> Campo obrigatório! </div>
+            </div> --}}
+
+            <div class="col-md-12">
+                <div class="form-outline">
+                    <input type="email" class="form-control" id="txtLogin" required style="margin-bottom: 0 !important;"/>
+                    <label for="txtLogin" class="form-label" style="margin-bottom: 0 !important;">Email ou usuário</label>
+                    {{!-- <div class="invalid-feedback">Campo obrigatório!</div> --}}
+                </div>
+            </div>
+
+            <!-- Password input -->
+            {{!-- <div class="form-outline mb-4">
+                <i id="showPassword" class="far fa-eye-slash trailing form_input--icon-eye form_input--icon-eye--active"></i>
+                <input type="password" id="txtPassword" class="form-control" required/>
+                <label class="form-label" for="txtPassword" >Senha</label>
+                <div class="invalid-feedback"> Campo obrigatório! </div>
+            </div> --}}
+
+            <div class="col-md-12">
+                <div class="form-outline">
+                    <i id="showPassword" class="far fa-eye-slash trailing form_input--icon-eye form_input--icon-eye--active"></i>
+                    <input type="password" class="form-control" id="txtPassword" required style="margin-bottom: 0 !important;"/>
+                    <label for="txtPassword" class="form-label" style="margin-bottom: 0 !important;">Senha</label>
+                    {{!-- <div class="invalid-feedback">Campo obrigatório!</div> --}}
+                </div>
+            </div>
+
+            <!-- 2 column grid layout for inline styling -->
+            {{!-- <div class="row mb-4">
+                <div class="col d-flex justify-content-center">
+                <!-- Checkbox -->
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="chkRememberMe" checked />
+                    <label class="form-check-label" for="chkRememberMe"> Lembrar de mim </label>
+                </div>
+                </div>
+
+                <div class="col">
+                    <!-- Simple link -->
+                    <a href="#!">Esqueceu a senha?</a>
+                </div>
+            </div> --}}
+
+            <div class="col-6">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="chkRememberMe" style="margin-bottom: 0 !important;"/>
+                    <label class="form-check-label" for="chkRememberMe" style="margin-bottom: 0 !important;"> Lembrar de mim! </label>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="form-check">
+                    <a href="#!">Esqueceu a senha?</a>
+                </div>
+            </div>
+
+            <!-- Submit button -->
+            {{!-- <button type="submit" class="btn btn-primary btn-block" id="btnLogin"> Entrar </button> --}}
+
+            <div class="col-12">
+                <button class="btn btn-primary btn-block" id="btnLogin">Entrar</button>
+            </div>
+        </div>
+    </div>
+</section>

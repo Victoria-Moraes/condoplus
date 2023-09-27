@@ -1,0 +1,16 @@
+.form {
+    &_input {
+        &--icon-eye {
+            pointer-events: all!important;
+            cursor: pointer;
+
+            &--inactive {
+                visibility: hidden;    
+            }
+
+            &--active {
+                visibility: visible;
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.login {
+    height: 100%;
+
+    background-size: cover;
+    background-image: linear-gradient(  to right bottom, 
+                                        rgba($color-primary-light, 0.6),
+                                        rgba($color-primary-dark, 0.6)
+                                    )
+                    , url(../../images/bg_login.jpg);
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    &__form {
+        width: 25rem;
+        height: 22.5rem;
+        padding: 1rem;
+        border-radius: 2rem;
+
+        background-color: $color-white;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+
+        &--title {
+            font-weight: bold;
+        }
+
+
+    }
+}
+
+/* hannah-busing-0V6DmTuJaIk-unsplash 1 */

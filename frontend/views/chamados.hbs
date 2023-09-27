@@ -1,0 +1,56 @@
+<div class="page-header">
+    <h1>Chamados</h1>
+    <a class="btn btn-primary" onclick="chamado_openFicha('I')">
+        <i class="fas fa-plus"></i>
+        &nbsp;Chamado
+    </a>
+</div>
+
+<hr class="page-divider">
+
+<div class="col-md-12">
+    <div class="condoplus-panel">
+        <div class="col-md-2">      
+            <label class="control-label control-title" for="idChamado">ID Chamado</label>
+            <input type="text" id="idChamado" class="form-control">
+        </div>
+        <div class="col-md-1">      
+            <label class="control-label control-title" for="dataDe">Data De</label>
+            <input type="text" class="form-control datepicker" id="dataDe" onchange="chamado_changeFiltroData(this)">
+        </div>
+        <div class="col-md-1">      
+            <label class="control-label control-title" for="dataAte">Data Até</label>
+            <input type="text" class="form-control datepicker" id="dataAte" onchange="chamado_changeFiltroData(this)">
+        </div>
+        <div class="col-md-3">      
+            <label class="control-label control-title" for="dataAte">Status</label>
+            <select type="text" class="form-control" id="statusFiltro">
+                <option value="ALL" selected> Todos </option>
+
+                {{!-- FIXME --}}
+                <option value="OPEN"> Em aberto </option>
+                <option value="P"> Pendente </option>
+                <option value="E"> Em Atendimento </option>
+                <option value="F"> Finalizado </option>
+                <option value="R"> Rejeitado </option>
+            </select>
+        </div>
+        <div class="col-md-3">      
+            <label class="control-label control-title" for="dataAte">Usuário</label>
+            <select type="text" class="form-control" id="usuarioFiltro">
+            </select>
+        </div>
+        <div class="col-md-1">      
+            <label class="control-label control-title" for="btnBuscar" style="display: block;">&nbsp;</label>
+            <a type="text" class="btn btn-info" id="btnBuscar" onclick="chamados_createGrid()">
+                <i class="fas fa-magnifying-glass"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="row" style="margin-top: 1rem;">
+    <div class="col-md-12">
+        <div id="gridChamados"></div>
+    </div>
+</div>
