@@ -3,7 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 // const hbs = require('hbs');
 const exphbs = require('express-handlebars');
-const routes = require('../routes/routes');
+const routes = require('./backend/routes/routes');
 const connectionDB = require(`./api/services/connectionDB`)
 
 let app = express()
