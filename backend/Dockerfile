@@ -6,7 +6,7 @@
 FROM node:current-alpine
 
 # Create app directory
-WORKDIR /usr/src/app
+WORKDIR /backend/source/app
 
 # Install dependencies
 COPY package.json ./
