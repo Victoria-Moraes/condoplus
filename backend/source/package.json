@@ -1,0 +1,26 @@
+{
+  "name": "condoplus",
+  "version": "1.0.0",
+  "description": "Aplicativo para gerencia de condominios - TCC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-server": "nodemon ./backend/src/server.js",
+    "compile:scss": "node ./backend/utils/compile_scss.js"
+  },
+  "author": "Matheus Miranda Luchiari",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "crypto": "^1.0.1",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.7",
+    "hbs": "^4.2.0",
+    "moment": "^2.29.4",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.4.3",
+    "nodemon": "^2.0.22",
+    "sass": "^1.63.6",
+    "tedious": "^16.1.0"
+  }
+}
