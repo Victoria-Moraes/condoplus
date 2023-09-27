@@ -9,7 +9,7 @@ FROM node:current-alpine
 WORKDIR /usr/src/app
 
 # Install dependencies
-COPY package*.json ./
+COPY package.json ./
 RUN npm install
 
 # Bundle app source
