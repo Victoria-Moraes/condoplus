@@ -27,4 +27,4 @@ COPY . .
 EXPOSE 8080
 
 # Run application
-CMD [ "node", "app.js" ]
+CMD [ "node", "index.js" ]
